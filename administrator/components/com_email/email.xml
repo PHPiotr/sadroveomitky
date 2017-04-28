@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.1" method="upgrade">
+	<name>com_email</name>
+	<author>Piotr Kowalski</author>
+	<creationDate>October 2013</creationDate>
+	<copyright>(C) 2005 - 2013 Open Source Matters. All rights reserved.
+	</copyright>
+	<license>GNU General Public License version 2 or later; see
+		LICENSE.txt
+	</license>
+	<authorEmail>piet.kowalski@gmail.com</authorEmail>
+	<authorUrl>www.agencja-profishop.pl</authorUrl>
+	<version>1.0.0</version>
+
+	<files folder="site">
+		<filename>email.php</filename>
+		<filename>router.php</filename>
+		<filename>controller.php</filename>
+		<filename>index.html</filename>
+		<folder>helpers</folder>
+		<folder>views</folder>
+		<languages>
+			<language tag="en-GB">language/en-GB/en-GB.com_email.ini</language>
+			<language tag="en-GB">language/en-GB/en-GB.com_email.sys.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_email.ini</language>
+			<language tag="pl-PL">language/pl-PL/pl-PL.com_email.sys.ini</language>
+		</languages>
+	</files>
+	<administration>
+		<files folder="admin">
+			<filename>index.html</filename>
+		</files>
+	</administration>
+</extension>
+

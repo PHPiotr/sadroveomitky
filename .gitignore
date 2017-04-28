@@ -33,6 +33,8 @@
 /administrator/components/index.html
 /administrator/help/*
 /administrator/includes/*
+/administrator/language/cs-CZ/
+/administrator/language/pl-PL/
 /administrator/language/en-GB/en-GB.com_ajax.ini
 /administrator/language/en-GB/en-GB.com_ajax.sys.ini
 /administrator/language/en-GB/en-GB.com_contenthistory.ini
@@ -251,6 +253,7 @@
 /administrator/language/en-GB/index.html
 /administrator/language/overrides/*
 /administrator/language/index.html
+/administrator/logs/
 /administrator/manifests/*
 /administrator/modules/mod_custom/*
 /administrator/modules/mod_feed/*
@@ -303,6 +306,8 @@
 /images/powered_by.png
 /includes/*
 /installation/*
+/language/cs-CZ/*
+/language/pl-PL/*
 /language/en-GB/en-GB.com_ajax.ini
 /language/en-GB/en-GB.com_config.ini
 /language/en-GB/en-GB.com_contact.ini

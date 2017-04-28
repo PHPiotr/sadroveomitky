@@ -1,0 +1,209 @@
+/*ADMIN*/
+
+.photos {
+    float: left;
+    margin: 10px;
+    position: relative;
+}
+.remove {
+    left: 4px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+.photo.main {
+	border: 1px solid red;
+}
+.photo.normal {
+	border: 1px solid #F5F5F5;
+}
+
+/*SITE*/
+
+/** reset **/
+
+.max480,
+.max767 {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.max767 {
+		display: block;
+	}
+	.max480 {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.max767 {
+		display: none;
+	}
+	.max480 {
+		display: block;
+	}
+}
+
+.gals .connected-carousels .navigation {
+	padding: 0;
+	border-top: none;
+	border-bottom: none;
+}
+
+/** Stage container **/
+
+.connected-carousels .stage {
+    margin: 0 auto;
+    position: relative;
+}
+
+/** Navigation container **/
+
+.connected-carousels .navigation {
+    width: 446px;
+    margin: 10px auto 0;
+    position: relative;
+}
+
+/** Shared carousel styles **/
+
+.connected-carousels .carousel {
+    overflow: hidden;
+    position: relative;
+}
+
+.connected-carousels .carousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.connected-carousels .carousel li {
+	float: left;
+}
+
+.connected-carousels .carousel-navigation li {
+    width: 158px;
+}
+
+.connected-carousels .carousel-navigation li a {
+    text-align: center;
+}
+
+/** Stage carousel specific styles **/
+
+.connected-carousels .carousel-stage {
+    height: 465px;
+	overflow:hidden;
+}
+
+/** Navigation carousel specific styles **/
+
+.connected-carousels .carousel-navigation {
+    height: 86px;
+    margin: 0 auto;
+    width: 156px;
+}
+
+.connetced-carousels .prev, 
+.connetced-carousels .next {
+	text-align: center;
+}
+
+/** Navigation carousel controls **/
+
+.connected-carousels .navigation .nav {
+	border-bottom: 43px solid rgba(0, 0, 0, 0);
+    border-top: 43px solid rgba(0, 0, 0, 0);
+	cursor: pointer;
+    float: left;
+	height: 0;
+    text-align: center;
+	width: 0;
+}
+
+.connected-carousels .navigation .nav.arrow-left {
+	border-right: 65px solid #0055A5;
+}
+
+.connected-carousels .navigation .nav.arrow-right {
+	border-left: 65px solid #0055A5;
+}
+
+.connected-carousels .navigation .prev-navigation,
+.connected-carousels .navigation .next-navigation {
+	position: absolute;
+	top: 0;
+}
+
+.connected-carousels .navigation .prev-navigation {
+	left: 0;
+}
+
+.connected-carousels .navigation .next-navigation {
+	right: 0;
+}
+
+.connected-carousels .navigation .next-navigation:hover .arrow-right {
+	border-left-color: #0044CC;
+}
+
+.connected-carousels .navigation .prev-navigation:hover .arrow-left {
+	border-right-color: #0044CC;
+}
+
+.connected-carousels .carousel-navigation li img {
+    display: block;
+}
+
+/** Stage carousel controls **/
+
+.connected-carousels .stage .nav {
+	border-bottom: 23px solid rgba(0, 0, 0, 0);
+    border-top: 23px solid rgba(0, 0, 0, 0);
+	cursor: pointer;
+    float: left;
+	height: 0;
+    text-align: center;
+	width: 0;
+}
+
+.connected-carousels .stage .nav.arrow-left {
+	border-right: 35px solid #0055A5;
+}
+
+.connected-carousels .stage .nav.arrow-right {
+	border-left: 35px solid #0055A5;
+}
+
+.connected-carousels .stage .prev-stage,
+.connected-carousels .stage .next-stage {
+	opacity: 0.7;
+	position: absolute;
+	top: 43%;
+}
+
+.connected-carousels .stage .prev-stage {
+	left: 0;
+}
+
+.connected-carousels .stage .next-stage {
+	right: 0;
+}
+
+.connected-carousels .stage .next-stage:hover .arrow-right {
+	border-left-color: #0044CC;
+}
+
+.connected-carousels .stage .prev-stage:hover .arrow-left {
+	border-right-color: #0044CC;
+}
+
+/* FANCYBOX OVERRIDE */
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+    background-image: url("../images/fancybox_sprite.png");
+}

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" client="site" type="module" method="upgrade">
+	<name>Profishop Map</name>
+	<author>Piotr Kowalski</author>
+	<creationDate>February 2014</creationDate>
+	<copyright>Copyright (C) 2014 Piotr Kowalski. All rights reserved.</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>agencja.profishop@gmail.com</authorEmail>
+	<authorUrl>http://www.agencja-profishop.pl</authorUrl>
+	<version>1.0</version>
+	<description>Profishop Map</description>
+	<files>
+		<filename module="mod_profishop_map">mod_profishop_map.php</filename>
+		<folder>tmpl</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="spacert1" type="spacer" class="text" label="&lt;strong&gt;Map Parameters&lt;/strong&gt;"/> 
+				<field name="width"
+					   type="text"
+					   default="980"
+					   label="Width of the map"  
+					   required="true" />         
+				<field name="height"
+					   type="text"
+					   default="460"
+					   label="Height of the map"
+					   required="true" />
+				<field name="latitude"
+					   type="text"
+					   default="50.039296"
+					   label="Latitude" />                                              
+				<field name="longitude"
+					   type="text"
+					   default="18.374598900000024"
+					   label="Longitude" />                                              
+				<field name="center_latitude"
+					   type="text"
+					   default="50.039296"
+					   label="Center Latitude" />                                              
+				<field name="center_longitude"
+					   type="text"
+					   default="18.384"
+					   label="Cenetr Longitude" />                                              
+				<field name="title"
+					   type="text"
+					   default="Diamant Sádrové Omítky"
+					   label="Title" />                                              
+				<field name="name"
+					   type="text"
+					   default="Damian Kabut"
+					   label="Name and Surname" />                                              
+				<field name="email"
+					   type="text"
+					   default="diamant.damian@wp.pl"
+					   label="Email" />                                              
+				<field name="nip"
+					   type="text"
+					   default="6472084898"
+					   label="Nip" />                                              
+				<field name="postal"
+					   type="text"
+					   default="44-370"
+					   label="Postal code" />                                              
+				<field name="city"
+					   type="text"
+					   default="Pszów"
+					   label="City" />                                              
+				<field name="street"
+					   type="text"
+					   default="ul. Karola Miarki 37"
+					   label="Street" />                                              
+				<field name="country"
+					   type="text"
+					   default="Polsko"
+					   label="Country" />                                              
+				<field name="zoom"
+					   type="text"
+					   default="15"
+					   label="Zoom" />                                              
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="cache" type="list"
+					   default="1" label="Caching"
+					   description="Select whether to cache the content of this module">
+					<option value="1">Use global</option>
+					<option value="0">No caching</option>
+				</field>
+				<field name="cache_time" type="text"
+					   default="900" label="Cache Time"
+					   description="The time before the module is recached" />
+			</fieldset>
+		</fields>
+	</config>     
+</extension>

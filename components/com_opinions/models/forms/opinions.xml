@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="opinions">
+	<fieldset name="fieldset">
+		<field id="inputSubject" name="inputSubject" type="text" />
+		<field required="true" id="inputName" name="inputName" maxlength="50" label="COM_OPINIONS_NAME_LABEL" type="text" />
+		<field required="true" id="inputCity" name="inputCity" maxlength="50" label="COM_OPINIONS_CITY_LABEL" type="text" />
+		<field id="inputPhone" name="inputPhone" maxlength="20" label="COM_OPINIONS_PHONE_LABEL" type="text" />
+		<field id="inputEmail" name="inputEmail" maxlength="255" label="COM_OPINIONS_EMAIL_LABEL" type="text" />
+		<field maxlength="500" id="inputMessage" label="COM_OPINIONS_MSG_LABEL" name="inputMessage" required="true" type="textarea" />
+	</fieldset>
+</form>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_GALS_GALS_VIEW_DEFAULT_TITLE" option="COM_GALS_GALS_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_GALS_GALS_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+			<!-- Add fields to define saved youtubes. -->
+
+			<field name="ordering" type="list"
+				default="0"
+				description="COM_GALS_ORDERING_DESC"
+				label="COM_GALS_ORDERING_LABEL"
+			>
+				<option value="id DESC">COM_GALS_NEWEST_FIRST</option>
+				<option value="id">COM_GALS_OLDEST_FIRST</option>
+				<option value="title">COM_GALS_TITLE</option>
+				<option value="title DESC">COM_GALS_TITLE_DESC</option>
+				<option value="ordering">COM_GALS_ORDERING_ORDERING</option>
+				<option value="ordering DESC">COM_GALS_ORDERING_ORDERING_DESC</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</metadata>

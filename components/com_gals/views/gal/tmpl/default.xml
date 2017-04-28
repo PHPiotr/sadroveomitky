@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_GALS_GAL_VIEW_DEFAULT_TITLE" option="COM_GALS_GAL_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_GALS_GAL_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+	<fields name="request">
+		<fieldset name="request">
+			<field required="true" name="alias" type="sql" label="COM_GALS_FIELD_GAL" query="SELECT alias, title FROM #__gals WHERE state IN (0,1)" key_field="alias" value_field="title" />
+		</fieldset>
+	</fields>
+</metadata>

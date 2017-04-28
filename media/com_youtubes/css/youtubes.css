@@ -1,0 +1,113 @@
+/* com_youtubes */
+
+/* RESET */
+
+.max480,
+.max767 {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.max767 {
+		display: block;
+	}
+	.max480 {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.max767 {
+		display: none;
+	}
+	.max480 {
+		display: block;
+	}
+}
+
+/* COM_YOUTUBES */
+
+.you {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.you .nav {
+	border-bottom: 43px solid rgba(0, 0, 0, 0);
+    border-top: 43px solid rgba(0, 0, 0, 0);
+	cursor: pointer;
+    float: left;
+	height: 0;
+    text-align: center;
+	width: 0;
+}
+
+.you .nav.arrow-left {
+	border-right: 65px solid #0055A5;
+}
+
+.you .nav.arrow-right {
+	border-left: 65px solid #0055A5;
+}
+
+.you .thumb {
+	display:block;
+	height: 86px;
+}
+
+/* JCAROUSEL */
+
+.you .jcarousellite {
+	float: left;
+}
+
+.you .jcarousellite img {
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+.you .jcarousel-wrapper {
+	margin: 10px auto 0;
+	position: relative;
+}
+
+.you .jcarousel {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.you .jcarousel li {
+    float: left;
+    width: 158px;
+}
+
+.you .jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.you .jcarousel-control-prev,
+.you .jcarousel-control-next {
+	position: absolute;
+	top: 0;
+}
+
+.you .jcarousel-control-prev {
+	left: 0;
+}
+
+.you .jcarousel-control-next {
+	right: 0;
+}
+
+.you .jcarousel-control-next:hover .arrow-right {
+	border-left-color: #0044CC;
+}
+
+.you .jcarousel-control-prev:hover .arrow-left {
+	border-right-color: #0044CC;
+}

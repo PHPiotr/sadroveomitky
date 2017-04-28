@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form name="email">
+	<fieldset name="fieldset">
+		<field id="inputSubject" name="inputSubject" type="text" />
+		<field required="true" id="inputName" name="inputName" maxlength="50" label="COM_EMAIL_NAME_LABEL" type="text" />
+		<field id="inputPhone" name="inputPhone" maxlength="50" label="COM_EMAIL_PHONE_LABEL" type="text" />
+		<field required="true" id="inputEmail" name="inputEmail" maxlength="255" label="COM_EMAIL_EMAIL_LABEL" type="text" />
+		<field id="inputMessage" label="COM_EMAIL_MSG_LABEL" name="inputMessage" required="true" type="textarea" maxlength="1000" />
+		<field id="copyInput" label="COM_EMAIL_COPY_LABEL" name="copyInput" type="checkbox" value="1" checked="checked" />
+	</fieldset>
+</form>

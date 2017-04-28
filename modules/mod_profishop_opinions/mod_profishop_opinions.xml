@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.0" client="site" type="module" method="upgrade">
+    <name>Profishop Opinions</name>
+    <author>Piotr Kowalski</author>
+    <creationDate>January 2016</creationDate>
+    <copyright>Copyright (C) 2016 Piotr Kowalski. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <version>1.0</version>
+    <description>Profishop Opinions</description>
+    <files>
+        <filename module="mod_profishop_opinions">mod_profishop_opinions.php</filename>
+        <folder>tmpl</folder>
+        <filename>index.html</filename>
+    </files>
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field
+                    name="moduleclass_sfx"
+                    type="text"
+                    label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                    description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+                <field name="cache" type="list"
+                       default="1" label="Caching"
+                       description="Select whether to cache the content of this module">
+                    <option value="1">Use global</option>
+                    <option value="0">No caching</option>
+                </field>
+                <field name="cache_time" type="text"
+                       default="900" label="Cache Time"
+                       description="The time before the module is recached" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

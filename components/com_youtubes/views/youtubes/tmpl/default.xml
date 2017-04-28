@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="COM_YOUTUBES_YOUTUBES_VIEW_DEFAULT_TITLE" option="COM_YOUTUBES_YOUTUBES_VIEW_DEFAULT_OPTION">
+		<message>
+			<![CDATA[COM_YOUTUBES_YOUTUBES_VIEW_DEFAULT_DESC]]>
+		</message>
+	</layout>
+
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+
+		<!-- Basic options. -->
+		<fieldset name="basic" label="COM_MENUS_BASIC_FIELDSET_LABEL">
+
+			<!-- Add fields to define saved youtubes. -->
+
+			<field name="ordering" type="list"
+				default="0"
+				description="COM_YOUTUBES_ORDERING_DESC"
+				label="COM_YOUTUBES_ORDERING_LABEL"
+			>
+				<option value="id DESC">COM_YOUTUBES_NEWEST_FIRST</option>
+				<option value="id">COM_YOUTUBES_OLDEST_FIRST</option>
+				<option value="title">COM_YOUTUBES_TITLE</option>
+				<option value="title DESC">COM_YOUTUBES_TITLE_DESC</option>
+				<option value="ordering">COM_YOUTUBES_ORDERING_ORDERING</option>
+				<option value="ordering DESC">COM_YOUTUBES_ORDERING_ORDERING_DESC</option>
+			</field>
+
+		</fieldset>
+	</fields>
+</metadata>
