@@ -13,7 +13,7 @@ defined('_JEXEC') or die;
  * @param   array
  * @return  array
  */
-function SitemapBuildRoute(&$query)
+function sitemapBuildRoute(&$query)
 {
 	$segments = array();
 
@@ -34,7 +34,7 @@ function SitemapBuildRoute(&$query)
  * @param   array
  * @return  array
  */
-function SearchParseRoute($segments)
+function sitemapParseRoute($segments)
 {
 	$vars = array();
 
