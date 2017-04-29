@@ -21,6 +21,7 @@ class YoutubesViewYoutubes extends JViewLegacy {
 	public function display($tpl = null) {
 		$app = JFactory::getApplication();
 		$this->items = $this->get('Items');
+		$this->api_key = JFactory::getConfig()->get('google_api_key');
 
 		JHtml::_('jquery.framework');
 		JHtml::script(JUri::base() . "media/com_youtubes/js/jcarousel.min.js");
