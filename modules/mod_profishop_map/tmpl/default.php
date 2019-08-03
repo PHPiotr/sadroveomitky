@@ -48,7 +48,7 @@ defined('_JEXEC') or die;
 	function loadScript() {
 		var script = document.createElement('script');
 		script.type = 'text/javascript';
-		script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize&key=<?php echo JFactory::getConfig()->get('api_key'); ?>';
+		script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&callback=initialize&key=<?php echo JFactory::getConfig()->get('google_api_key'); ?>';
 		document.body.appendChild(script);
 	}
 
