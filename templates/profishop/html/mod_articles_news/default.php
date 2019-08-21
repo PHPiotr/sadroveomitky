@@ -65,6 +65,12 @@ if (!empty($opinion)) {
 
 
 	foreach ($list as $item) :
+        	if ($item->alias === 'chytre-zatepleni') {
+            		$item->link = 'http://chytrezateplenidiamant.cz';
+        	}
+        	if ($item->alias === 'ocieplanie-pianka') {
+            		$item->link = 'https://ocieplaniepiankadiamant.pl';
+        	}
 		require JModuleHelper::getLayoutPath('mod_articles_news', '_item');
 	endforeach;
 	?>
