@@ -47,7 +47,7 @@ if (!empty($opinion)) {
     $opinion->images = json_encode(array('image_fulltext' => 'images/strojni-omitky.jpg'));
     $opinion->fulltext = $opinion->opinion;
 
-    array_unshift ($list, $opinion);
+    array_push($list, $opinion);
 }
 
 ?>
